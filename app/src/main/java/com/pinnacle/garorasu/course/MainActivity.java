@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction ft = fn.beginTransaction();
         ft.replace(R.id.main_content_frame_container, f1);
         ft.commit();
-        Toast.makeText(getApplicationContext(),"SSCCGL",Toast.LENGTH_SHORT).show();
+
     }
     public void contactUsOnClick(MenuItem item)
     {
@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity
         Intent sendIntent = new Intent(Intent.ACTION_SENDTO);
         sendIntent.setData(uri);
         startActivity(Intent.createChooser(sendIntent, "Send email"));
-        Toast.makeText(getApplicationContext(),"contact us",Toast.LENGTH_SHORT).show();
+
     }
     public void shareOnClick(MenuItem item)
     {
@@ -182,6 +182,6 @@ public class MainActivity extends AppCompatActivity
 
         startActivity(Intent.createChooser(intent,"sharing"));
 
-        Toast.makeText(getApplicationContext(),"share",Toast.LENGTH_SHORT).show();
+
     }
 }
